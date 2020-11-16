@@ -36,7 +36,7 @@ namespace SFX4Less
             //Equipment radio button
             if (rbEquip.Checked)
             {
-                Equipment newEquipment = new Equipment(lbColor.SelectedIndex.ToString(),
+                Equipment newEquipment = new Equipment(lbColor.SelectedItem.ToString(),
                     calDateAdded.SelectionStart.ToString(), txtBrand.Text,
                     int.Parse(txtQty.Text), txtDesc.Text, txtCom.Text,
                     int.Parse(txtInventCount.Text), int.Parse(txtExtra1.Text), int.Parse(txtExtra2.Text));
@@ -53,7 +53,7 @@ namespace SFX4Less
             //Makeup radio button
             else if (rbMakeup.Checked)
             {
-                Makeup newMakeup = new Makeup(lbColor.SelectedIndex.ToString(),
+                Makeup newMakeup = new Makeup(lbColor.SelectedItem.ToString(),
                     calDateAdded.SelectionStart.ToString(), txtBrand.Text,
                     int.Parse(txtQty.Text), txtDesc.Text, txtCom.Text,
                     int.Parse(txtInventCount.Text), double.Parse(txtExtra1.Text), txtExtra2.Text);
@@ -72,7 +72,7 @@ namespace SFX4Less
             else if (rbProp.Checked)
             {
 
-                Prop newProp = new Prop(lbColor.SelectedIndex.ToString(),
+                Prop newProp = new Prop(lbColor.SelectedItem.ToString(),
                     calDateAdded.SelectionStart.ToString(), txtBrand.Text,
                     int.Parse(txtQty.Text), txtDesc.Text, txtCom.Text,
                     int.Parse(txtInventCount.Text), int.Parse(txtExtra1.Text), int.Parse(txtExtra2.Text));
@@ -89,7 +89,7 @@ namespace SFX4Less
             //Software radio button
             else
             {
-                Software newSoftware = new Software(lbColor.SelectedIndex.ToString(),
+                Software newSoftware = new Software(lbColor.SelectedItem.ToString(),
                     calDateAdded.SelectionStart.ToString(), txtBrand.Text,
                     int.Parse(txtQty.Text), txtDesc.Text, txtCom.Text,
                     int.Parse(txtInventCount.Text), txtExtra1.Text, txtExtra2.Text);
